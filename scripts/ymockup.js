@@ -181,6 +181,11 @@ jQuery(function($){
     }
   });
   
+  ymockup.find("[data-name='clear'] button").click(function(){
+    Element.destroyAll();
+    return false;
+  });
+  
   var ymockupSelected = ymockup.find("[data-name='selected']");
   
   ymockupSelected.find("button").click(function(){

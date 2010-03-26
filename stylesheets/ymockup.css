@@ -74,8 +74,12 @@ body {
   margin-left: 5px;
 }
 
-#ymockup [data-name="selected"] {
+#ymockup > * {
   border-top: 1px dotted #ccc;
+}
+
+#ymockup > *:first-child {
+  border-top: none;
 }
 
 #ymockup [data-name="selected"] input[type="range"] {
@@ -89,9 +93,12 @@ body {
   line-height: 24px;
 }
 
-#ymockup button {
-  float: right;
+#ymockup button { 
   margin: 0;
+}
+
+#ymockup [data-name="selected"] button {
+  float: right;
 }
 
 #ymockup [data-name] {
