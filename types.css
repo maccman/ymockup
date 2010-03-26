@@ -45,3 +45,39 @@
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
 }
+
+.app {
+  width: 800px;
+  height: 400px;
+  -webkit-box-shadow: 0px 0px 50px #2C2D2E;
+  
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+
+.app .title {
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#AEB0B3), to(#79797A));
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.sidebar {
+  min-width: 10px;
+  min-height: 10px;
+  width: 100px;
+  height: 100px;
+  background: #D0D7E3;
+  border-left: 1px solid #ADADAD;
+  border-right: 1px solid #ADADAD;
+}
+
+.footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#AEB0B3), to(#79797A));
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+}
