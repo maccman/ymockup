@@ -183,6 +183,7 @@ jQuery(function($){
   
   ymockup.find("[data-name='clear'] button").click(function(){
     Element.destroyAll();
+    Element.selected = null;
     return false;
   });
   
