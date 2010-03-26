@@ -1,6 +1,6 @@
 #YMockup
 
-##Easily create UI mockups using HTML and CSS.
+###Easily create UI mockups using HTML and CSS.
 
 Requires WebKit (i.e. Safari/Chrome).
 
@@ -10,6 +10,7 @@ First, clone the repository and open index.html in your browser.
 Play around with the examples.
 
 To add new 'types':
+
 * Add the type HTML to type.html - follow the existing format
 * Add the type CSS  to types.css
 * Add any custom JS to types.js
