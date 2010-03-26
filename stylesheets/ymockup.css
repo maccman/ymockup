@@ -33,6 +33,7 @@
   resize: both;
   overflow: auto;
   -webkit-user-modify: read-write;
+  outline: none;
 }
 
 input.ymockupType, 
