@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>YMockup</title>
+	
+	<link rel="stylesheet" href="stylesheets/ui/jquery.ui.all.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/aristo.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/ymockup.css" type="text/css">
+	<link rel="stylesheet" href="types.css" type="text/css">
+	
+	<script src="scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/jquery.chain.js" type="text/javascript" charset="utf-8"></script>
+  <script src="scripts/jquery.ui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/superclass.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/supermodel.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/supermodel.marshal.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/supermodel.chain.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/ymockup.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="types.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <div id="ymockup">
+    <div data-name="create">
+      <h2>Add element</h2>
+      <form>
+        <label>
+          Type:
+          <select size="1">
+            <option></option>
+          </select>
+        </label>
+        <button>Create</button>
+      </form>
+    </div>
+    <div data-name="selected">
+      <h2>Selected element</h2>
+      <label>
+        z-index
+        <input type="range" value="0">
+      </label>
+      <span></span>
+      <button>Remove</button>
+    </div>
+  </div>
+  
+  <div id="ymockupTypes">    
+  </div>  
+</body>
+</html>

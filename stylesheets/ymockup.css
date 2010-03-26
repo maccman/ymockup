@@ -1,0 +1,94 @@
+#ymockup {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  max-height: 600px;
+  overflow: auto;
+  padding: 7px;
+  z-index: 2000;
+  
+  width: 150px;
+  
+  background-color: rgba(999, 999, 999, 0.8);  
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px #DDDDDD;
+  border: 1px solid #D9D9D9;
+  text-align: center;
+}
+
+#ymockup label select {
+  width: 80px;
+}
+
+#ymockup label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#ymockupTypes {
+  display: none;
+}
+
+.ymockupType {
+  resize: both;
+  overflow: auto;
+  -webkit-user-modify: read-write;
+}
+
+body {
+  color: #777777;
+  background: #FAFAFA;
+  text-shadow: 0 1px 1px #F7F7F7;
+}
+
+#ymockup h1 {
+  margin: 0 0 0.67em 0;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: #404040;
+}
+
+#ymockup h2 {
+  font-size: 16px;
+  color: #808080;
+  margin: 0 0 10px 0;
+}
+
+#ymockup > * {
+  margin-top: 10px;
+  padding-top: 8px;
+}
+
+#ymockup > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#ymockup select {
+  margin-left: 5px;
+}
+
+#ymockup [data-name="selected"] {
+  border-top: 1px dotted #ccc;
+}
+
+#ymockup [data-name="selected"] input[type="range"] {
+  margin-bottom: 10px;
+}
+
+#ymockup [data-name="selected"] span {
+  float: left;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+}
+
+#ymockup button {
+  float: right;
+  margin: 0;
+}
+
+#ymockup [data-name] {
+  overflow: auto;
+}
