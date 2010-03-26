@@ -35,6 +35,11 @@
   -webkit-user-modify: read-write;
 }
 
+input.ymockupType, 
+button.ymockupType {
+  -webkit-user-select: none;
+}
+
 body {
   color: #777777;
   background: #FAFAFA;

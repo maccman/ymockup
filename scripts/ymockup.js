@@ -40,16 +40,18 @@ Element.include({
     if ( !this.ref.css("left") ) {
       this.ref.css({
         position: "absolute",
-        left: "50%",
-        top: "50%"
+        left: "20%",
+        top: "20%"
       });
     }
-        
-    this.ref.draggable();
+    
+    // Cancel null to make input draggable
+    this.ref.draggable({cancel:null});
     this.ref.bind("dragstop", $.proxy(function(){ this.updateOffset(); }, this));
     // No resize event :(
     this.ref.bind("mouseup", $.proxy(function(){ this.updateSize(); }, this));
     this.ref.bind("focus", $.proxy(function(){ this._class.selected = this; }, this));
+    this.ref.bind("click", $.proxy(function(){ this._class.selected = this; }, this));
 
     $("body").append(this.ref);
   },
@@ -139,7 +141,6 @@ jQuery(function($){
     anchor:"select", 
     builder: function(){
       var data = this.item();
-      console.warn(data)
       this.text(data.name);
     }
   });
@@ -148,6 +149,7 @@ jQuery(function($){
   
   ymockupSelected.find("button").click(function(){
     Element.selected.destroy();
+    Element.selected = null;
     return false;
   });
   
@@ -175,6 +177,7 @@ jQuery(function($){
         ref: element
       });
     });
+    
+    Element.append();
   });
-  Element.append();
 });
