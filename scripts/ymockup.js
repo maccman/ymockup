@@ -2,6 +2,10 @@ jQuery.fn.outerHTML = function() {
   return $('<div>').append( this.eq(0).clone() ).html();
 };
 
+jQuery.fn.dataName = function(){
+  return $(this).attr("data-name");
+};
+
 var Type = SuperModel.setup("Type");
 Type.attributes = ["name", "html"];
 
@@ -135,6 +139,7 @@ jQuery(function($){
     anchor:"select", 
     builder: function(){
       var data = this.item();
+      console.warn(data)
       this.text(data.name);
     }
   });
@@ -165,8 +170,9 @@ jQuery(function($){
     $("#ymockupTypes >*").each(function(i, element){
       element = $(element);
       Type.create({
-        name: element.attr("data-name"), 
-        html: element.outerHTML()
+        name: element.dataName(), 
+        html: element.outerHTML(),
+        ref: element
       });
     });
   });
