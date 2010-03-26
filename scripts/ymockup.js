@@ -26,7 +26,8 @@ Element.extend({
   topZIndex: function(){
     var result = 0;
     this.each(function(el){
-      result += el.zindex;
+      if(el.zindex >= result)
+        result = el.zindex;
     });
     return result;
   }
