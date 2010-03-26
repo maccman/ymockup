@@ -4,6 +4,18 @@
 
 Requires WebKit (i.e. Safari/Chrome).
 
+[Live demo](http://eribium.org/ymockup)
+
+##Features
+
+* Saves your mockup locally
+* Customisable for any HTML/CSS
+* Edit elements in place
+* Drag and drop
+* Snap to grid dragging
+* z-index control
+* Move elements with the arrow keys (hold ctrl)
+
 ##Usage
 
 First, clone the repository and open index.html in your browser.
